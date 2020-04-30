@@ -1,3 +1,5 @@
+package com.marcosjr;
+
 
 public class Fornecedor {
 	String nome;
