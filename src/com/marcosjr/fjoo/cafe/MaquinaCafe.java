@@ -1,7 +1,7 @@
 package com.marcosjr.fjoo.cafe;
 
 public class MaquinaCafe {
-	int acucarDisponivel;
+	private int acucarDisponivel;
 	
 	public void fazerCafe () {
 		fazerCafe(10);
@@ -14,5 +14,13 @@ public class MaquinaCafe {
 			acucarDisponivel -= quantidadeAcucar;
 			System.out.println("Fazendo café com " + quantidadeAcucar + " gramas de açucar...");
 		}
+	}
+
+	public int getAcucarDisponivel() {
+		return acucarDisponivel;
+	}
+
+	public void setAcucarDisponivel(int acucarDisponivel) {
+		this.acucarDisponivel = acucarDisponivel;
 	}
 }
