@@ -3,15 +3,9 @@ package com.marcosjr.financeiro.modelo;
 public class ContaPagar extends Conta{
 
 	private Fornecedor fornecedor;
-	private SituacaoConta situacaoConta;
-
-	public ContaPagar() {
-		this.situacaoConta = SituacaoConta.PENDENTE;
-	}
 
 	public ContaPagar(Fornecedor fornecedor, String descricao, Double valor, String dataVencimento) {
 		// chamando o construtor sem parâmetros
-		this();
 		
 		this.fornecedor = fornecedor;
 		this.descricao = descricao;
@@ -33,21 +27,6 @@ public class ContaPagar extends Conta{
 				
 			// altera situação da conta para PAGA
 			this.situacaoConta = SituacaoConta.PAGA;
-		}
-	}
-	
-	public void cancelar() {
-		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode cancelar uma conta que já foi paga: " 
-				+ this.getDescricao() + ".");
-		} else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode cancelar uma conta que já foi cancelada: " 
-				+ this.getDescricao() + ".");
-		} else {
-			System.out.println("Cancelando conta " + this.getDescricao() + ".");
-			
-			// altera situação da conta para CANCELADA
-			this.situacaoConta = SituacaoConta.CANCELADA;
 		}
 	}
 
@@ -77,10 +56,6 @@ public class ContaPagar extends Conta{
 	}
 	public void setDataVencimento(String dataVencimento) {
 		this.dataVencimento = dataVencimento;
-	}
-	
-	public SituacaoConta getSituacaoConta() {
-		return this.situacaoConta;
 	}
 
 }
