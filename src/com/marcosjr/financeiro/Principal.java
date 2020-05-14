@@ -1,6 +1,5 @@
 package com.marcosjr.financeiro;
 
-
 import com.marcosjr.financeiro.modelo.ContaPagar;
 import com.marcosjr.financeiro.modelo.Fornecedor;
 
