@@ -1,10 +1,7 @@
 package com.marcosjr.financeiro.modelo;
 
-public class ContaPagar {
+public class ContaPagar extends Conta{
 
-	private String descricao;
-	private Double valor;
-	private String dataVencimento;
 	private Fornecedor fornecedor;
 	private SituacaoConta situacaoConta;
 

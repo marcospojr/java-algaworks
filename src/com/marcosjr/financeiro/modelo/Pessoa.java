@@ -1,12 +1,14 @@
 package com.marcosjr.financeiro.modelo;
 
-public class Fornecedor extends Pessoa{
+public class Pessoa {
+	protected String nome;
 
 	public String getNome() {
-		return this.nome;
+		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 }
