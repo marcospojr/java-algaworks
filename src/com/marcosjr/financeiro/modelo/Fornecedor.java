@@ -1,15 +1,14 @@
-package com.marcosjr;
-
+package com.marcosjr.financeiro.modelo;
 
 public class Fornecedor {
-	String nome;
+
+	public String nome;
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 }
