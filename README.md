@@ -1,2 +1,2 @@
 # java-algaworks
-Projetos do curso de Java da Algaworks
+Projetos e desafios do curso de Java da Algaworks
