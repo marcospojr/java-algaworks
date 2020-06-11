@@ -13,6 +13,16 @@ public class ContaReceber extends Conta{
 	
 	public ContaReceber() {
 	}
+	
+	public void exibirDetalhes() {
+		System.out.println("_________________________________________________________");
+		System.out.println("                  Detalhes ContaReceber                  ");
+		System.out.println("_________________________________________________________");
+		System.out.println("Cliente: " + cliente.getNome());
+		System.out.println("Descrição: " + descricao);
+		System.out.println("Valor: R$ " + valor);
+		System.out.println("Data de Vencimento: " + dataVencimento);
+	}
 
 	public void cancelar() {
 		if (this.getValor() > 50000d) {

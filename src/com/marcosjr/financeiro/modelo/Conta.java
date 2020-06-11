@@ -1,6 +1,6 @@
 package com.marcosjr.financeiro.modelo;
 
-public class Conta {
+public abstract class Conta {
 	protected String descricao;
 	protected String dataVencimento;
 	protected Double valor;
@@ -10,6 +10,8 @@ public class Conta {
 	public Conta() {
 		this.situacaoConta = SituacaoConta.PENDENTE;
 	}
+	
+	public abstract void exibirDetalhes();
 	
 	public void cancelar() {
 		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
